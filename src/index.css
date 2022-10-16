@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    background-color: rgb(20, 19, 19);
+}
+
+* {
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: inherit;
+    border: none;
+    color: var(--white-text-color);
+}
+
+:root{
+    --bg-color: rgb(20, 19, 19);
+    --light-blue: rgb(17, 17, 126);
+    --white-text-color: rgb(235, 235, 235);
+}
+
+* > button {
+    cursor: pointer;
+}
