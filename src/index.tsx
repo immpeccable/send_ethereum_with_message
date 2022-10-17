@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { PageLayout } from "./Components/PageLayout";
 import "./index.css";
+import { TransactionProvider } from "./Context/TransactionContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <PageLayout />
-  </React.StrictMode>
+  <TransactionProvider>
+    <React.StrictMode>
+      <PageLayout />
+    </React.StrictMode>
+  </TransactionProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
