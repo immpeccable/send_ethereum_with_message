@@ -21,3 +21,20 @@ export const ConnectButton = styled.button`
     transform: scale(1.1);
   }
 `;
+
+export const TransactionForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & > input {
+    background-color: var(--light-blue);
+    padding: 1em;
+  }
+  & > button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+`;
